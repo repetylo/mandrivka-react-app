@@ -4,20 +4,11 @@ import {
   LayersControl, 
   LayerGroup, 
   TileLayer, 
-  Marker, 
-  Popup 
 } from 'react-leaflet';
-import L from 'leaflet';
 
 import './styles.css';
 
-import iconPNG from './icons/icon.png';
- 
-interface IMapCanter {
-  lat: number,
-  lng: number,
-  zoom: number,
-}
+import MarkersControl from './markers-control/markers-control'
 
 interface IResultEllements {
   id: number, 
@@ -29,35 +20,18 @@ interface IResultEllements {
   longitude: number
 }
 
-type Props = {
-  items: IResultEllements[]
+interface ITypeElements {
+  id: string,
+  name: string,
+  icon: string
 }
 
-export const MapContainer: React.FC<Props> = ({ items }) => {
+type Props = {
+  items: IResultEllements[],
+  types: ITypeElements[]
+}
 
-  const icon = new L.Icon({
-    iconUrl: iconPNG,
-    iconAnchor: [10, 19],
-    popupAnchor: [0, -20],
-    iconSize: [26, 19],
-  });
-  
-  const mapItems = items.map(item => <Marker 
-      key = {item.id}
-      position={[item.latitude, item.longitude]} 
-      icon={icon}
-      >
-      <Popup>
-        <div className="title">
-          <h3>{item.name}</h3>
-          <img className="rating" src={`./images/rating/${item.rating}.png`} alt={`рейтинг - ${item.rating}`} />
-        </div>
-        <div className="img">
-          <img src={`./images/${item.image}`} alt={item.name} />
-        </div>
-      </Popup>
-    </Marker>
-  ) ; 
+export const MapContainer: React.FC<Props> = ({ items, types }) => {
 
   return (
     <Map 
@@ -96,13 +70,8 @@ export const MapContainer: React.FC<Props> = ({ items }) => {
           </LayerGroup>
         </LayersControl.BaseLayer>
       </LayersControl>
-      <LayersControl position="bottomright">
-        <LayersControl.Overlay checked name="Marker with popup">
-          <LayerGroup>
-            {mapItems}
-          </LayerGroup>
-        </LayersControl.Overlay>   
-      </LayersControl>
+
+      <MarkersControl items={items} types={types} />
     </Map>
   )
 };

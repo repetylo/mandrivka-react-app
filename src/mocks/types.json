@@ -1,0 +1,67 @@
+[
+  {
+    "id":"castle",
+    "name":"Замки",
+    "icon":"castle.png"
+  },
+  {
+    "id":"gate",
+    "name":"Брами",
+    "icon":"gate.png"
+  },
+  {
+    "id":"castle-ruins",
+    "name":"Руїни замків",
+    "icon":"castle-ruins.png"
+  },
+  {
+    "id":"church",
+    "name":"Церкви",
+    "icon":"church.png"
+  },
+  {
+    "id":"wooden-church",
+    "name":"Деревяні церкви",
+    "icon":"wooden-church.png"
+  },
+  {
+    "id":"monastery",
+    "name":"Монастирі",
+    "icon":"monastery.png"
+  },
+  {
+    "id":"synagogue",
+    "name":"Синагоги",
+    "icon":"synagogue.png"
+  },
+  {
+    "id":"house",
+    "name":"Будівлі",
+    "icon":"house.png"
+  },
+  {
+    "id":"palace",
+    "name":"Палаци",
+    "icon":"palace.png"
+  },
+  {
+    "id":"museum",
+    "name":"Музеї",
+    "icon":"museum.png"
+  },
+  {
+    "id":"natural-monument",
+    "name":"Пам'ятки природи",
+    "icon":"natural-monument.png"
+  },
+  {
+    "id":"waterfall",
+    "name":"Водоспади",
+    "icon":"natural-monument.png"
+  },
+  {
+    "id":"other",
+    "name":"Інше",
+    "icon":"icon.png"
+  }
+]

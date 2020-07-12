@@ -5,6 +5,7 @@ import MapContainer from './components/map-container'
 import './App.css';
 
 import items from './mocks/places.json'
+import types from './mocks/types.json'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div id="map">
         <MapContainer 
           items={items}
+          types={types}
         />
       </div>
     </div>
