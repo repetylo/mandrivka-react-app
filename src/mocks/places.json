@@ -1,0 +1,412 @@
+[
+  {
+    "type": "church",
+    "id": 1,
+    "latitude": 50.4529,
+    "longitude": 30.5141,
+    "image": "DSCF7508-Panorama.jpg",
+    "name": "Софійський собор",
+    "parent": null,
+    "rating": 5
+  },
+  {
+    "type": "gate",
+    "id": 2,
+    "latitude": 50.4488,
+    "longitude": 30.5134,
+    "image": "DSCF7487-Panorama.jpg",
+    "name": "Золоті ворота",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "monastery",
+    "id": 3,
+    "latitude": 50.4355,
+    "longitude": 30.5565,
+    "image": "2013-11-08-17-06-DSC_5911-4-Panorama.jpg",
+    "name": "Києво-Печерська Лавра",
+    "parent": null,
+    "rating": 5
+  },
+  {
+    "type": "other",
+    "id": 4,
+    "latitude": 50.4334,
+    "longitude": 30.5218,
+    "image": "nsk-olimpiiskyi-1.jpg",
+    "name": "НСК \"Олімпійський\"",
+    "parent": null,
+    "rating": 3
+  },
+  {
+    "type": "wooden-church",
+    "id": 5,
+    "latitude": 50.062,
+    "longitude": 23.964,
+    "image": "DSCF5924-Panorama.jpg",
+    "name": "Церква Рiздва Пресвятої Богородиці",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "synagogue",
+    "id": 6,
+    "latitude": 50.0573,
+    "longitude": 23.9726,
+    "image": "DSCF1680.jpg",
+    "name": "Синагога",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "wooden-church",
+    "id": 7,
+    "latitude": 50.0553,
+    "longitude": 23.9822,
+    "image": "DSCF1661_1.jpg",
+    "name": "Церква Пресвятої Трійці",
+    "parent": null,
+    "rating": 5
+  },
+  {
+    "type": "castle",
+    "id": 8,
+    "latitude": 50.0545,
+    "longitude": 23.969,
+    "image": "DSCF5815-Panorama_cr.jpg",
+    "name": "Жовківський замок",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "palace",
+    "id": 9,
+    "latitude": 50.0453,
+    "longitude": 35.4328,
+    "image": "2013-10-12-13-31-DSC_5600.jpg",
+    "name": "Садиба Сергія Кеніга",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "palace",
+    "id": 10,
+    "latitude": 50.0066,
+    "longitude": 36.2271,
+    "image": "2013-10-11-16-04-DSC_5054.JPG",
+    "name": "Держпром",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "museum",
+    "id": 11,
+    "latitude": 49.9926,
+    "longitude": 36.2308,
+    "image": "2013-10-11-14-50-DSC_4921.jpg",
+    "name": "Харківський історичний музей",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "monastery",
+    "id": 12,
+    "latitude": 49.992,
+    "longitude": 36.2288,
+    "image": "2013-10-11-14-41-DSC_4906-1-Panorama.jpg",
+    "name": "Покровський монастир",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "church",
+    "id": 13,
+    "latitude": 49.9899,
+    "longitude": 36.2305,
+    "image": "2013-10-11-14-30-DSC_4894-15-Panorama-1.jpg",
+    "name": "Успенський собор",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "house",
+    "id": 14,
+    "latitude": 49.9887,
+    "longitude": 36.2333,
+    "image": "2013-10-11-17-17-DSC_5106.jpg",
+    "name": "Будинок зі шпилем",
+    "parent": null,
+    "rating": 3
+  },
+  {
+    "type": "other",
+    "id": 15,
+    "latitude": 49.9808,
+    "longitude": 36.2616,
+    "image": "2013-10-11-19-26-DSC_5193-1-Panorama.jpg",
+    "name": "ОСК \"Металіст\"",
+    "parent": null,
+    "rating": 3
+  },
+  {
+    "type": "castle",
+    "id": 16,
+    "latitude": 49.9685,
+    "longitude": 24.9007,
+    "image": "DSCF7282.jpg",
+    "name": "Олеський замок",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "http://podoroziaib.org.ua/images/stories/map/theater-m",
+    "id": 17,
+    "latitude": 49.8438,
+    "longitude": 24.0263,
+    "image": "2013-09-16-13-41-DSC_4464-Panorama.jpg",
+    "name": "Національний академічний Театр Опери і Балету ім. С. Крушельницької",
+    "parent": null,
+    "rating": 5
+  },
+  {
+    "type": "other",
+    "id": 18,
+    "latitude": 49.7748,
+    "longitude": 24.0276,
+    "image": "arena-lviv-1.jpg",
+    "name": "Арена Львів",
+    "parent": null,
+    "rating": 3
+  },
+  {
+    "type": "castle",
+    "id": 19,
+    "latitude": 49.7017,
+    "longitude": 24.1936,
+    "image": "DSCF8982-Panorama.jpg",
+    "name": "Замок Сенявських",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "palace",
+    "id": 20,
+    "latitude": 49.6673,
+    "longitude": 23.4827,
+    "image": "2013-05-15-17-37-DSC_225511.jpg",
+    "name": "Палац Фредрів",
+    "parent": null,
+    "rating": 3
+  },
+  {
+    "type": "castle",
+    "id": 21,
+    "latitude": 49.4465,
+    "longitude": 24.9453,
+    "image": "DSC05795-Panorama.jpg",
+    "name": "Замок Сенявських",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "wooden-church",
+    "id": 22,
+    "latitude": 49.4103,
+    "longitude": 24.6028,
+    "image": "2006_10150156.jpg",
+    "name": "Церква Св. Духа",
+    "parent": null,
+    "rating": 5
+  },
+  {
+    "type": "wooden-church",
+    "id": 23,
+    "latitude": 49.3477,
+    "longitude": 23.4993,
+    "image": "DSCF3399.JPG",
+    "name": "Церква Св. Юрія",
+    "parent": null,
+    "rating": 5
+  },
+  {
+    "type": "castle-ruins",
+    "id": 24,
+    "latitude": 49.1917,
+    "longitude": 23.4098,
+    "image": "DSCF1294-Panorama-(1)0.jpg",
+    "name": "Залишки фортеці Тустань",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "wooden-church",
+    "id": 25,
+    "latitude": 48.984,
+    "longitude": 22.8545,
+    "image": "DSC_0546-Panorama.jpg",
+    "name": "Церква Св. Арх. Михаїла",
+    "parent": null,
+    "rating": 5
+  },
+  {
+    "type": "http://podoroziaib.org.ua/images/stories/map/waterfall",
+    "id": 26,
+    "latitude": 48.8052,
+    "longitude": 25.5877,
+    "image": "2006_08290136.jpg",
+    "name": "Червоногородський (Джуринський) водоспад",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "castle",
+    "id": 27,
+    "latitude": 48.8041,
+    "longitude": 25.5968,
+    "image": "2006_08290146.jpg",
+    "name": "Червоногородський замок",
+    "parent": null,
+    "rating": 3
+  },
+  {
+    "type": "church",
+    "id": 28,
+    "latitude": 48.6769,
+    "longitude": 26.5718,
+    "image": "DSC_5262-1.jpg",
+    "name": "Костел Св. Петра і Павла",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "castle",
+    "id": 29,
+    "latitude": 48.6734,
+    "longitude": 26.5631,
+    "image": "DSC_4989.jpg",
+    "name": "Стара фортеця",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "http://podoroziaib.org.ua/images/stories/map/monument-m",
+    "id": 30,
+    "latitude": 48.6505,
+    "longitude": 22.2655,
+    "image": "DSCF1804.JPG",
+    "name": "Монумент Україна - Визволителям",
+    "parent": null,
+    "rating": 3
+  },
+  {
+    "type": "other",
+    "id": 31,
+    "latitude": 48.5368,
+    "longitude": 22.5068,
+    "image": "DSCF6962_3_4_tonemapped.jpg",
+    "name": "Винні підвали",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "castle",
+    "id": 32,
+    "latitude": 48.522,
+    "longitude": 26.4983,
+    "image": "DSC_5428-Panorama.jpg",
+    "name": "Хотинська фортеця",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "http://podoroziaib.org.ua/images/stories/map/monument-m",
+    "id": 33,
+    "latitude": 48.5181,
+    "longitude": 26.499,
+    "image": "DSC_5466.jpg",
+    "name": "Пам'ятник Петру Конашевичу Сагайдачному",
+    "parent": null,
+    "rating": 3
+  },
+  {
+    "type": "house",
+    "id": 34,
+    "latitude": 48.5092,
+    "longitude": 26.4955,
+    "image": "DSC_5663.jpg",
+    "name": "Митниця",
+    "parent": null,
+    "rating": 3
+  },
+  {
+    "type": "castle",
+    "id": 35,
+    "latitude": 48.4313,
+    "longitude": 22.6874,
+    "image": "DSCF6242.jpg",
+    "name": "Замок Паланок",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "church",
+    "id": 36,
+    "latitude": 48.3809,
+    "longitude": 26.084,
+    "image": "DSC_5680.jpg",
+    "name": "Оборонна церква Св. Іллі",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "palace",
+    "id": 37,
+    "latitude": 48.2971,
+    "longitude": 25.9243,
+    "image": "DSC_5933-Panorama3.jpg",
+    "name": "Резиденція Буковинських Митрополитів",
+    "parent": null,
+    "rating": 5
+  },
+  {
+    "type": "wooden-church",
+    "id": 38,
+    "latitude": 48.2559,
+    "longitude": 24.3443,
+    "image": "2013-06-22-10-54-DSC_30751-Panorama.jpg",
+    "name": "Церква Вознесіння Господнього (Струківська)",
+    "parent": null,
+    "rating": 5
+  },
+  {
+    "type": "natural-monument",
+    "id": 39,
+    "latitude": 48.1783,
+    "longitude": 23.3498,
+    "image": "DSCF6319.jpg",
+    "name": "Долина нарцисів",
+    "parent": null,
+    "rating": 4
+  },
+  {
+    "type": "castle",
+    "id": 40,
+    "latitude": 48.168,
+    "longitude": 23.3017,
+    "image": "DSCF6494.jpg",
+    "name": "Хустський замок",
+    "parent": null,
+    "rating": 3
+  },
+  {
+    "type": "other",
+    "id": 41,
+    "latitude": 48.021,
+    "longitude": 37.8102,
+    "image": "2012-06-15-4.jpg",
+    "name": "Донбас Арена",
+    "parent": null,
+    "rating": 3
+  }
+]

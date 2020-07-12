@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
-
+import React from 'react';
 import { 
   Map, 
   LayersControl, 
   LayerGroup, 
   TileLayer, 
-  FeatureGroup, 
-  Circle, 
   Marker, 
   Popup 
 } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
+
+import './styles.css';
+
+import iconPNG from './icons/icon.png';
  
 interface IMapCanter {
   lat: number,
@@ -18,30 +19,51 @@ interface IMapCanter {
   zoom: number,
 }
 
-type Props = {
-  lat: number,
-  lng: number,
-  zoom: number,
+interface IResultEllements {
+  id: number, 
+  name: string,
+  image: string,
+  type: string,
+  rating: number,
+  latitude: number,
+  longitude: number
 }
 
+type Props = {
+  items: IResultEllements[]
+}
 
-export const MapContainer: React.FC<Props> = ({ lat, lng, zoom }) => {
+export const MapContainer: React.FC<Props> = ({ items }) => {
 
-  const [state, setState] = useState({
-    lat,
-    lng,
-    zoom,
-  })
+  const icon = new L.Icon({
+    iconUrl: iconPNG,
+    iconAnchor: [10, 19],
+    popupAnchor: [0, -20],
+    iconSize: [26, 19],
+  });
+  
+  const mapItems = items.map(item => <Marker 
+      key = {item.id}
+      position={[item.latitude, item.longitude]} 
+      icon={icon}
+      >
+      <Popup>
+        <div className="title">
+          <h3>{item.name}</h3>
+          <img className="rating" src={`./images/rating/${item.rating}.png`} alt={`рейтинг - ${item.rating}`} />
+        </div>
+        <div className="img">
+          <img src={`./images/${item.image}`} alt={item.name} />
+        </div>
+      </Popup>
+    </Marker>
+  ) ; 
 
   return (
     <Map 
-      //center={[state.lat, state.lng]}
-
-      //zoom={state.zoom} 
       bounds={[[52.379338, 22.137169],[44.387127,40.220473]]}
       style={{ width: window.innerWidth, height: window.innerHeight}}
     >
-
       <LayersControl position="topright">
         <LayersControl.BaseLayer checked name="Map">
           <LayerGroup>
@@ -49,10 +71,10 @@ export const MapContainer: React.FC<Props> = ({ lat, lng, zoom }) => {
               url='https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png'
             />
             <TileLayer
-                attribution= '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-                url= 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png'
-              />
-            </LayerGroup>
+              attribution= '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+              url= 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png'
+            />
+          </LayerGroup>
         </LayersControl.BaseLayer>
 
         <LayersControl.BaseLayer name="Satellite">
@@ -73,27 +95,16 @@ export const MapContainer: React.FC<Props> = ({ lat, lng, zoom }) => {
             />
           </LayerGroup>
         </LayersControl.BaseLayer>
-        <LayersControl.Overlay name="Marker with popup">
-          <Marker position={[51.51, -0.06]}>
-            <Popup>
-              <span>
-                A pretty CSS3 popup. <br /> Easily customizable.
-              </span>
-            </Popup>
-          </Marker>
-        </LayersControl.Overlay>
-        <LayersControl.Overlay name="Feature group">
-          <FeatureGroup color="purple">
-            <Popup>
-              <span>Popup in FeatureGroup</span>
-            </Popup>
-            <Circle center={[51.51, -0.06]} radius={200} />
-          </FeatureGroup>
-        </LayersControl.Overlay>
       </LayersControl>
-
-
+      <LayersControl position="bottomright">
+        <LayersControl.Overlay checked name="Marker with popup">
+          <LayerGroup>
+            {mapItems}
+          </LayerGroup>
+        </LayersControl.Overlay>   
+      </LayersControl>
     </Map>
-
   )
 };
+
+MapContainer.displayName = 'MapContainer';

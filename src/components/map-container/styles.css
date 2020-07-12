@@ -1,0 +1,50 @@
+@import '~leaflet/dist/leaflet.css';
+
+.leaflet-control-layers-list {
+	text-align: left;
+}
+
+.leaflet-popup-content{
+	width: max-content !important; 
+  height: 119px !important;
+}
+
+.leaflet-popup-content .title { 
+	float: right;
+	max-width: 170px;
+}
+
+.leaflet-popup-content .img {
+	float: left;
+}
+
+.leaflet-popup-content .title h3 { 
+	font-size: 14px; 
+	color: #333366;
+	margin: 0 0 3px;
+	display: block;
+}
+
+.leaflet-popup-content .img img {
+	margin: 3px 10px 0 0;
+	width: 170px;
+	display: block;
+}
+
+
+element.style {
+	margin-left: -6px;
+	margin-top: -6px;
+	width: 12px;
+	height: 12px;
+	transform: translate3d(241px, 240px, 0px);
+	z-index: 240;
+}
+.my-div-icon {
+	background-color: #fff;
+	border: 2px solid #c1c1c1;
+	opacity: 0.7;
+	border-radius: 50%;
+	padding: 2px;
+	background-image: '/icons/icon.png';
+}
